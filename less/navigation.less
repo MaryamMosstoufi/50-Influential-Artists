@@ -1,0 +1,27 @@
+header{
+    nav{
+        .flex();
+        margin: 3rem;  
+
+        a {
+            font-size: 3rem; 
+            &:hover,
+            &:active {
+                font-weight: 500;
+            }
+             
+            &::after {
+               content:'|';
+               margin: 2rem;
+               font-weight: normal;
+            } 
+
+            &:last-of-type {
+               &::after {
+                   content: '';
+                   margin: 0;
+               }
+            }
+        }
+    }
+}
