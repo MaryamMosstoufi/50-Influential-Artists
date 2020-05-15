@@ -93,11 +93,16 @@ html {
 body {
   color: black;
   font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 body a {
   color: black;
   text-decoration: none;
+}
+* {
+  max-width: 100%;
 }
 header nav {
   display: flex;
@@ -123,4 +128,77 @@ header nav a::after {
 header nav a:last-of-type::after {
   content: '';
   margin: 0;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25% 0 ;
+}
+.title-container h1 {
+  font-size: 7.2rem;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+.title-container button {
+  background: white;
+  color: black;
+  border: 1px solid silver;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 2.4rem;
+  margin-top: 2rem;
+}
+.artists-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  border-top: 2px solid silver;
+  margin-top: 4rem;
+  padding-top: 4rem;
+}
+@media (max-width: 500px) {
+  .artists-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+.artists-container .artist {
+  width: 50%;
+  min-width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.artists-container .artist img,
+.artists-container .artist a,
+.artists-container .artist div {
+  padding: 2rem;
+}
+.artists-container .artist img {
+  height: 300px;
+  max-height: 400px;
+  border-radius: 2rem;
+}
+.artists-container .artist a {
+  font-size: 2.4rem;
 }
