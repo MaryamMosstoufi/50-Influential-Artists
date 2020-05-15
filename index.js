@@ -333,9 +333,8 @@ The function should console.log 50 chunks of HTML code that match the structure 
 function getHTML(artists) {
   let allFiftyHtml = "";
   for (let i = 0; i < artists.length; i++) {
-    let
-      allFiftyHtml +=
-    "<div class=\"artist\"> <div class=\"image\"> <img src=\"assets/" +
+    allFiftyHtml +=
+      "<div class=\"artist\"> <div class=\"image\"> <img src=\"assets/" +
       artists[i].name.replace(/\s+/g, '-') +
       ".jpg \"/> </div> <div class=\"name\"> <a href=\"" +
       artists[i].wikipedia +
@@ -362,4 +361,3 @@ function randomize(/* Code here */) {
 
 
 /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
-// Note: I did it already.
