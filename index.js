@@ -266,12 +266,12 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */) {
-
-  /* Code here */
-
+function addArtist(myId, myName, myYears, myGenre, myNationality, myBio) {
+  let newArtist = { id: myId, name: myName, years: myYears, genre: myGenre, nationality: myNationality, bio: myBio };
+  artists.push(newArtist);
 }
-
+//addArtist(21, "Maryam Mosstoufi", "1974 - 2020", "Web Design & Development", "Iranian", "I am learning JavaScript! I am slowly starting to like JS as I learn more and more.")
+//console.log(artists);
 
 
 
