@@ -189,8 +189,6 @@ header nav a:last-of-type::after {
   align-items: center;
   align-content: center;
 }
-.artists-container .artist img,
-.artists-container .artist a,
 .artists-container .artist div {
   padding: 2rem;
 }
@@ -201,4 +199,8 @@ header nav a:last-of-type::after {
 }
 .artists-container .artist a {
   font-size: 2.4rem;
+}
+.artists-container .artist .bio {
+  max-height: 5rem;
+  overflow-y: scroll;
 }
