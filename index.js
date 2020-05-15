@@ -251,12 +251,11 @@ function removeArtist(artists, index) {
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */) {
-
-  /* Code here */
-
+function lotsOfArt(artists) {
+  const hundredPlus = artists.filter(numOfPaintings => numOfPaintings.paintings > 100);
+  return hundredPlus;
 }
-
+console.log(lotsOfArt(artists));
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
 
