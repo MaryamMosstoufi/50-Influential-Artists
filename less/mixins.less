@@ -1,0 +1,17 @@
+.flex (@d: row, @fw: nowrap, @j: center, @ai: center, @ac: center ){
+    display: flex;
+    flex-direction: @d;
+    flex-wrap: @fw;
+    justify-content: @j;
+    align-items: @ai;
+    align-content: @ac;
+};
+
+.btn (@background, @color) {
+    background:@background;
+    color: @color;
+    border: 1px solid silver;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 1rem 2rem;
+}
